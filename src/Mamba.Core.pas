@@ -3,9 +3,9 @@
                     |  \/  | __ _  _ __  | |__  __ _
                     | |\/| |/ _` || '  \ | '_ \/ _` |
                     |_|  |_|\__,_||_|_|_||_.__/\__,_|
-                              Game Toolkit™
+                              Game Toolkitâ„¢
 
-                 Copyright © 2024-present tinyBigGAMES™ LLC
+                 Copyright Â© 2024-present tinyBigGAMESâ„¢ LLC
                           All Rights Reserved.
 
                     Website: https://tinybiggames.com
@@ -6386,7 +6386,7 @@ type
   { TFont }
   TFont = class(TBaseInterface, IFont)
   protected const
-    DEFAULT_GLYPHS = ' !"#$%&''()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~™©';
+    DEFAULT_GLYPHS = ' !"#$%&''()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~â„¢Â©';
   protected type
     PFontGlyph = ^TFontGlyph;
     TFontGlyph = record
@@ -6649,12 +6649,12 @@ begin
     haCenter:
       begin
         LWidth := TextLength(AText, []);
-        LX := (LViewport.size.w - LWidth)/2;
+        LX := (AWindow.GetVirtualSize.w - LWidth)/2;
       end;
     haRight:
       begin
         LWidth := TextLength(AText, []);
-        LX := LViewport.size.w - LWidth;
+        LX := AWindow.GetVirtualSize.w - LWidth;
       end;
   end;
 
